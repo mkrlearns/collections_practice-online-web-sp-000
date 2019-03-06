@@ -33,10 +33,10 @@ def find_a(array)
 end
 
 def sum_array(array)
-  sum = 0
-  array.each{|int| sum = sum + int}
-  sum
-  array.inject(0){|sum, x| sum + x }
+  # sum = 0
+  # array.each{|int| sum = sum + int}
+  # sum
+  array.inject(0, :+)
 end
 
 def add_s(array)
